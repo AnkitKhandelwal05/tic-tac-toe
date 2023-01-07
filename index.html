@@ -20,6 +20,11 @@
     <script src="script.js"></script>
   </head>
   <body style="background-color: #F76E11">
+    <div class="row text-center ">
+        <div id="star" class="start " onclick="name()">
+          <div class="overlay-content">
+        <span class="display-1 text-white ">START!!!</span></div>
+    </div>
     <div class="container-fluid" style="background-color: #F76E11">
       <div class="text-center mx- auto mb-0">
         <h1
@@ -30,16 +35,16 @@
         </h1>
       </div>
       <div class="row text-center">
-        <div class="col display-2 my-auto fw-bold order-0">Player 1: O </div>
-        <div class="col order-2 order-md-1"> 
+        <div class="col display-2 my-auto fw-bold order-0"><span id="1"></span>: O </div>
+        <div class="col order-2 order-md-1 "> 
       <table class="mx-auto table-lg mt-3">
         <tr >
-            <td ><button class="btn btn-dark btn-lg size color"  onclick="cl(11)"><span id="11"></span></button></td>
-            <td ><button class="btn btn-dark btn-lg size color"  onclick="cl(12)"><span id="12"></span></button></td>
-            <td ><button class="btn btn-dark btn-lg size color"  onclick="cl(13)"><span id="13"></span></button></td>
+            <td ><button class="btn btn-dark btn-lg size color"  onclick="cl(11), tem(11)"><span id="11" ></span></button></td>
+            <td ><button class="btn btn-dark btn-lg size color"  onclick="cl(12)"><span id="12" ></span></button></td>
+            <td ><button class="btn btn-dark btn-lg size color"  onclick="cl(13)"><span id="13" ></span></button></td>
         </tr>
         <tr >
-            <td><button class="btn btn-dark btn-lg size color"  onclick="cl(21)"><span id="21"></span></button></td>
+            <td><button class="btn btn-dark btn-lg size color"  onclick="cl(21)"><span id="21" ></span></button></td>
             <td ><button class="btn btn-dark btn-lg size color"  onclick="cl(22)"><span id="22"></span></button></td>
             <td ><button class="btn btn-dark btn-lg size color"  onclick="cl(23)"><span id="23"></span></button></td>
         </tr>
@@ -50,11 +55,14 @@
         </tr>
       </table>
     </div>
-    <div class="col display-2 my-auto fw-bold p-0 order-1 order-sm-2">Player 2: X</div>
+    <div class="col display-2 my-auto fw-bold p-0 order-1 order-sm-2"><span id="2"></span>: X</div>
     </div>
     <div class="row text-center ">
-        <div id="myNav" class="overlay " onclick="window.location.reload()">
-        <span id="win" class="display-1 overlay-content text-white my-auto"></span>
+        <div id="myNav" class="overlay">
+          <div class="row overlay-content">
+            <div class="col "><span id="win" class="display-1 text-white my-auto mt-5 mb-5"></span><br>
+              <button class="btn color display-1 mx-auto mb-3 p-2" onclick="window.location.reload()">RESTART</button></div>
+          </div>
     </div>
 </div>
     </div>
